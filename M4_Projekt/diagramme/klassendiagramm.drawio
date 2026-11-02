@@ -1,0 +1,260 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Klassendiagramm" name="Klassendiagramm">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell value="&lt;b&gt;Klassendiagramm – Fahrzeugvermietung (M4)&lt;/b&gt; &amp;nbsp; Stand nach Abschluss des Projekts" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontSize=16;" vertex="1" id="c3" parent="1">
+          <mxGeometry as="geometry" x="40" y="-10" width="1400" height="30" />
+        </mxCell>
+        <mxCell value="vermietung.ui" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#E1F5FE;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c4" parent="1">
+          <mxGeometry as="geometry" x="20" y="30" width="1500" height="330" />
+        </mxCell>
+        <mxCell value="vermietung.logik" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#E8F5E9;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c5" parent="1">
+          <mxGeometry as="geometry" x="20" y="400" width="2160" height="640" />
+        </mxCell>
+        <mxCell value="vermietung.daten" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#F3E5F5;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c6" parent="1">
+          <mxGeometry as="geometry" x="20" y="1080" width="1300" height="520" />
+        </mxCell>
+        <mxCell value="vermietung.model" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#FFF3E0;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c7" parent="1">
+          <mxGeometry as="geometry" x="20" y="1640" width="2160" height="760" />
+        </mxCell>
+        <mxCell value="vermietung.fehler" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#FFEBEE;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c8" parent="1">
+          <mxGeometry as="geometry" x="1560" y="30" width="620" height="330" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void {static}&lt;br/&gt;- legeDemodatenAn(s): void {static}&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c9" parent="1">
+          <mxGeometry as="geometry" x="50" y="80" width="271" height="88" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KonsolenUI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- service: VermietungService&lt;br/&gt;- eingabe: Eingabe&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ starten(): void&lt;br/&gt;- zeigeMenue(): void&lt;br/&gt;- fuehreAus(auswahl: int): boolean&lt;br/&gt;- fahrzeugErfassen(): void&lt;br/&gt;- kundeRegistrieren(): void&lt;br/&gt;- fahrzeugVermieten(): void&lt;br/&gt;- fahrzeugZurueckgeben(): void&lt;br/&gt;- vertraegeAnzeigen(): void&lt;br/&gt;- preisStrategieWaehlen(): void&lt;br/&gt;+ fahrzeugVermietet(v: Mietvertrag): void&lt;br/&gt;+ fahrzeugZurueckgegeben(v: Mietvertrag): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c10" parent="1">
+          <mxGeometry as="geometry" x="450" y="80" width="332" height="238" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Eingabe&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- scanner: Scanner&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ leseText(frage: String): String&lt;br/&gt;+ leseGanzzahl(frage: String, min: int, max: int): int&lt;br/&gt;+ leseBetrag(frage: String): double&lt;br/&gt;+ leseDatum(frage: String, standard: LocalDate): LocalDate&lt;br/&gt;+ leseJaNein(frage: String): boolean&lt;br/&gt;+ zeigeFehler(meldung: String): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c11" parent="1">
+          <mxGeometry as="geometry" x="1000" y="80" width="414" height="148" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VermietungException&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#333333;" vertex="1" id="c12" parent="1">
+          <mxGeometry as="geometry" x="1600" y="70" width="149" height="27" />
+        </mxCell>
+        <mxCell value="extends RuntimeException" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontSize=10;fontColor=#666666;" vertex="1" id="c13" parent="1">
+          <mxGeometry as="geometry" x="1800" y="74" width="200" height="20" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ValidierungException&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c14" parent="1">
+          <mxGeometry as="geometry" x="1800" y="130" width="156" height="27" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0;exitY=0.5;entryX=0.5;entryY=1;" edge="1" source="c14" target="c12" id="c15" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;EintragNichtGefundenException&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c16" parent="1">
+          <mxGeometry as="geometry" x="1800" y="182" width="217" height="27" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0;exitY=0.5;entryX=0.5;entryY=1;" edge="1" source="c16" target="c12" id="c17" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FahrzeugNichtVerfuegbarException&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c18" parent="1">
+          <mxGeometry as="geometry" x="1800" y="234" width="237" height="27" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0;exitY=0.5;entryX=0.5;entryY=1;" edge="1" source="c18" target="c12" id="c19" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DatenzugriffException&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c20" parent="1">
+          <mxGeometry as="geometry" x="1800" y="286" width="162" height="27" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0;exitY=0.5;entryX=0.5;entryY=1;" edge="1" source="c20" target="c12" id="c21" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IMietListener&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ fahrzeugVermietet(v: Mietvertrag): void&lt;br/&gt;+ fahrzeugZurueckgegeben(v: Mietvertrag): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c22" parent="1">
+          <mxGeometry as="geometry" x="50" y="460" width="332" height="80" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VermietungService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- fahrzeugRepository: IRepository&amp;lt;Fahrzeug&amp;gt;&lt;br/&gt;- kundeRepository: IRepository&amp;lt;Kunde&amp;gt;&lt;br/&gt;- vertragRepository: IRepository&amp;lt;Mietvertrag&amp;gt;&lt;br/&gt;- listener: List&amp;lt;IMietListener&amp;gt;&lt;br/&gt;- preisStrategie: IPreisStrategie&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ fahrzeugErfassen(typ, marke, modell, preis, km, zusatz): Fahrzeug&lt;br/&gt;+ getAlleFahrzeuge(): List&amp;lt;Fahrzeug&amp;gt;&lt;br/&gt;+ getVerfuegbareFahrzeuge(): List&amp;lt;Fahrzeug&amp;gt;&lt;br/&gt;+ getFahrzeug(id: String): Fahrzeug&lt;br/&gt;+ kundeRegistrieren(name, email, stammkunde): Kunde&lt;br/&gt;+ getAlleKunden(): List&amp;lt;Kunde&amp;gt;&lt;br/&gt;+ getKunde(id: String): Kunde&lt;br/&gt;+ vermieten(fahrzeugId, kundeId, von, bis): Mietvertrag&lt;br/&gt;+ zurueckgeben(vertragId, rueckgabe, km): Mietvertrag&lt;br/&gt;+ getAlleVertraege(): List&amp;lt;Mietvertrag&amp;gt;&lt;br/&gt;+ getOffeneVertraege(): List&amp;lt;Mietvertrag&amp;gt;&lt;br/&gt;+ berechneUmsatz(): double&lt;br/&gt;+ setPreisStrategie(s: IPreisStrategie): void&lt;br/&gt;+ getPreisStrategie(): IPreisStrategie&lt;br/&gt;+ registriereListener(l: IMietListener): void&lt;br/&gt;- benachrichtigeVermietet(v: Mietvertrag): void&lt;br/&gt;- benachrichtigeZurueckgegeben(v: Mietvertrag): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c23" parent="1">
+          <mxGeometry as="geometry" x="450" y="450" width="475" height="373" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IRepository&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ speichern(objekt: T): void&lt;br/&gt;+ findeNachId(id: String): Optional&amp;lt;T&amp;gt;&lt;br/&gt;+ findeAlle(): List&amp;lt;T&amp;gt;&lt;br/&gt;+ naechsteId(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c24" parent="1">
+          <mxGeometry as="geometry" x="1040" y="460" width="278" height="110" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IPreisStrategie&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ berechnePreis(f: Fahrzeug, k: Kunde, von: LocalDate, bis: LocalDate): double&lt;br/&gt;+ getBezeichnung(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c25" parent="1">
+          <mxGeometry as="geometry" x="1440" y="460" width="550" height="80" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StandardPreisStrategie&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ berechnePreis(...): double&lt;br/&gt;+ getBezeichnung(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c26" parent="1">
+          <mxGeometry as="geometry" x="1240" y="800" width="210" height="88" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;WochenendPreisStrategie&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- WOCHENEND_FAKTOR: double = 0.75 {readOnly}&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ berechnePreis(...): double&lt;br/&gt;- istWochenende(tag: LocalDate): boolean&lt;br/&gt;+ getBezeichnung(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c27" parent="1">
+          <mxGeometry as="geometry" x="1490" y="800" width="319" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StammkundenPreisStrategie&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- RABATT_FAKTOR: double = 0.9 {readOnly}&lt;br/&gt;- basis: IPreisStrategie&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ berechnePreis(...): double&lt;br/&gt;+ getBezeichnung(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c28" parent="1">
+          <mxGeometry as="geometry" x="1840" y="800" width="292" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MietProtokoll&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- datei: Path&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ fahrzeugVermietet(v: Mietvertrag): void&lt;br/&gt;+ fahrzeugZurueckgegeben(v: Mietvertrag): void&lt;br/&gt;- schreibe(text: String): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c29" parent="1">
+          <mxGeometry as="geometry" x="50" y="1130" width="332" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;CsvRepository&amp;lt;T&amp;gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# TRENNZEICHEN: String = &amp;quot;;&amp;quot;&lt;br/&gt;- datei: Path&lt;br/&gt;- idPraefix: String&lt;br/&gt;- cache: Map&amp;lt;String, T&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# ausFeldern(felder: String[]): T {abstract}&lt;br/&gt;# inFelder(objekt: T): String[] {abstract}&lt;br/&gt;# idVon(objekt: T): String {abstract}&lt;br/&gt;+ speichern(objekt: T): void&lt;br/&gt;+ findeNachId(id: String): Optional&amp;lt;T&amp;gt;&lt;br/&gt;+ findeAlle(): List&amp;lt;T&amp;gt;&lt;br/&gt;+ naechsteId(): String&lt;br/&gt;- laden(): void&lt;br/&gt;- allesSchreiben(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#333333;" vertex="1" id="c30" parent="1">
+          <mxGeometry as="geometry" x="560" y="1130" width="319" height="238" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CsvFahrzeugRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# ausFeldern(f: String[]): Fahrzeug&lt;br/&gt;# inFelder(fz: Fahrzeug): String[]&lt;br/&gt;# idVon(fz: Fahrzeug): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c31" parent="1">
+          <mxGeometry as="geometry" x="300" y="1440" width="258" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CsvKundeRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# ausFeldern(f: String[]): Kunde&lt;br/&gt;# inFelder(k: Kunde): String[]&lt;br/&gt;# idVon(k: Kunde): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c32" parent="1">
+          <mxGeometry as="geometry" x="640" y="1440" width="237" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CsvMietvertragRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# ausFeldern(f: String[]): Mietvertrag&lt;br/&gt;# inFelder(v: Mietvertrag): String[]&lt;br/&gt;# idVon(v: Mietvertrag): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c33" parent="1">
+          <mxGeometry as="geometry" x="960" y="1440" width="278" height="103" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;FahrzeugTyp&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;AUTO&lt;br/&gt;MOTORRAD&lt;br/&gt;LIEFERWAGEN&lt;br/&gt;- bezeichnung: String&lt;br/&gt;- zusatzBezeichnung: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ getBezeichnung(): String&lt;br/&gt;+ getZusatzBezeichnung(): String&lt;br/&gt;+ ausText(text: String): FahrzeugTyp {static}&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c34" parent="1">
+          <mxGeometry as="geometry" x="50" y="1700" width="326" height="178" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;Fahrzeug&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- id: String&lt;br/&gt;- marke: String&lt;br/&gt;- modell: String&lt;br/&gt;- grundpreisProTag: double&lt;br/&gt;- kilometerstand: int&lt;br/&gt;- verfuegbar: boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ getTagespreis(): double {leaf}&lt;br/&gt;# berechneZuschlagProTag(): double {abstract}&lt;br/&gt;+ getTyp(): FahrzeugTyp {abstract}&lt;br/&gt;+ getZusatzwert(): int {abstract}&lt;br/&gt;+ vermieten(): void&lt;br/&gt;+ zuruecknehmen(neuerKm: int): void&lt;br/&gt;+ istVerfuegbar(): boolean&lt;br/&gt;+ getId() / getMarke() / getModell() / getKilometerstand() ...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#333333;" vertex="1" id="c35" parent="1">
+          <mxGeometry as="geometry" x="470" y="1700" width="441" height="253" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Auto&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- STANDARD_SITZE: int = 5&lt;br/&gt;- ZUSCHLAG_GROSSRAUM: double = 20&lt;br/&gt;- anzahlSitze: int&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# berechneZuschlagProTag(): double&lt;br/&gt;+ getTyp(): FahrzeugTyp&lt;br/&gt;+ getZusatzwert(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c36" parent="1">
+          <mxGeometry as="geometry" x="250" y="2160" width="251" height="133" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Motorrad&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- HUBRAUM_GRENZE_CCM: int = 600&lt;br/&gt;- ZUSCHLAG_GROSSER_HUBRAUM: double = 15&lt;br/&gt;- hubraumCcm: int&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# berechneZuschlagProTag(): double&lt;br/&gt;+ getTyp(): FahrzeugTyp&lt;br/&gt;+ getZusatzwert(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c37" parent="1">
+          <mxGeometry as="geometry" x="560" y="2160" width="285" height="133" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Lieferwagen&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- ZUSCHLAG_PRO_KUBIKMETER: double = 2&lt;br/&gt;- ladevolumenM3: int&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;# berechneZuschlagProTag(): double&lt;br/&gt;+ getTyp(): FahrzeugTyp&lt;br/&gt;+ getZusatzwert(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c38" parent="1">
+          <mxGeometry as="geometry" x="910" y="2160" width="271" height="118" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FahrzeugFactory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ erstelle(typ: FahrzeugTyp, id, marke, modell, preis, km, verfuegbar, zusatz): Fahrzeug {static}&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c39" parent="1">
+          <mxGeometry as="geometry" x="960" y="1700" width="679" height="73" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Kunde&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- id: String&lt;br/&gt;- name: String&lt;br/&gt;- email: String&lt;br/&gt;- stammkunde: boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ getId(): String&lt;br/&gt;+ getName(): String&lt;br/&gt;+ getEmail(): String&lt;br/&gt;+ istStammkunde(): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c40" parent="1">
+          <mxGeometry as="geometry" x="1240" y="2140" width="196" height="163" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Mietvertrag&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;- id: String&lt;br/&gt;- fahrzeugId: String&lt;br/&gt;- kundeId: String&lt;br/&gt;- von: LocalDate&lt;br/&gt;- bisGeplant: LocalDate&lt;br/&gt;- rueckgabe: LocalDate&lt;br/&gt;- gefahreneKm: int&lt;br/&gt;- betrag: double&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ neu(id, fahrzeugId, kundeId, von, bis, betrag): Mietvertrag {static}&lt;br/&gt;+ pruefeZeitraum(von, bis): void {static}&lt;br/&gt;+ berechneTage(von, bis): long {static}&lt;br/&gt;+ abschliessen(rueckgabe, km, betrag): void&lt;br/&gt;+ istOffen(): boolean&lt;br/&gt;+ getter ...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c41" parent="1">
+          <mxGeometry as="geometry" x="1640" y="1700" width="496" height="253" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Validierung&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ pruefeText(wert, feldname): String {static}&lt;br/&gt;+ pruefeEmail(email): String {static}&lt;br/&gt;+ pruefePositiv(wert, feldname): double {static}&lt;br/&gt;+ pruefeNichtNegativ(wert, feldname): int {static}&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c42" parent="1">
+          <mxGeometry as="geometry" x="1620" y="2140" width="360" height="118" />
+        </mxCell>
+        <mxCell value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;" edge="1" source="c9" target="c10" id="c43" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;" edge="1" source="c10" target="c11" id="c44" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c44" id="c45">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;" edge="1" source="c10" target="c23" id="c46" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c46" id="c47">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0;exitY=0.8;entryX=0.5;entryY=0;" edge="1" source="c10" target="c22" id="c48" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;" edge="1" source="c29" target="c22" id="c49" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="listener" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=0;exitY=0.15;entryX=1;entryY=0.5;" edge="1" source="c23" target="c22" id="c50" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c50" id="c51">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="3 Repositories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=1;exitY=0.1;entryX=0;entryY=0.3;" edge="1" source="c23" target="c24" id="c52" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c52" id="c53">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="preisStrategie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=0.75;exitY=0;entryX=0.5;entryY=0;" edge="1" source="c23" target="c25" id="c54" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c54" id="c55">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=0;entryX=0.2;entryY=1;" edge="1" source="c26" target="c25" id="c56" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c27" target="c25" id="c57" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.3;exitY=0;entryX=0.8;entryY=1;" edge="1" source="c28" target="c25" id="c58" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="basis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=0.8;exitY=0;entryX=1;entryY=0.5;" edge="1" source="c28" target="c25" id="c59" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c59" id="c60">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=1;exitY=0.2;entryX=0.5;entryY=1;" edge="1" source="c30" target="c24" id="c61" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c31" target="c30" id="c62" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c32" target="c30" id="c63" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c33" target="c30" id="c64" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&amp;lt;&amp;lt;use&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;exitX=0.2;exitY=1;entryX=0.3;entryY=0;" edge="1" source="c31" target="c39" id="c65" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.2;" edge="1" source="c39" target="c35" id="c66" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c36" target="c35" id="c67" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c37" target="c35" id="c68" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;" edge="1" source="c38" target="c35" id="c69" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.3;entryX=1;entryY=0.3;" edge="1" source="c35" target="c34" id="c70" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c70" id="c71">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="kundeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" edge="1" source="c41" target="c40" id="c72" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c72" id="c73">
+          <mxGeometry as="geometry" x="-0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c72" id="c74">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="fahrzeugId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.9;entryX=1;entryY=0.6;" edge="1" source="c41" target="c35" id="c75" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c75" id="c76">
+          <mxGeometry as="geometry" x="-0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="c75" id="c77">
+          <mxGeometry as="geometry" x="0.85" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="&lt;b&gt;Design Patterns&lt;/b&gt;&lt;br/&gt;&amp;bull; &lt;b&gt;Strategy&lt;/b&gt;: IPreisStrategie + 3 Tarife, zur Laufzeit wechselbar (Menue 9)&lt;br/&gt;&amp;bull; &lt;b&gt;Factory&lt;/b&gt;: FahrzeugFactory erzeugt die passende Fahrzeug-Subklasse (UI und CSV-Laden)&lt;br/&gt;&amp;bull; &lt;b&gt;Observer&lt;/b&gt;: IMietListener (KonsolenUI, MietProtokoll) wird vom Service benachrichtigt&lt;br/&gt;&amp;bull; &lt;b&gt;Repository&lt;/b&gt; + &lt;b&gt;Template Method&lt;/b&gt;: IRepository / CsvRepository, Fahrzeug.getTagespreis()&lt;br/&gt;Weitere Abhaengigkeiten (Service &amp;rarr; Model-Klassen, Model &amp;rarr; Validierung, alle &amp;rarr; Exceptions) sind zur Uebersicht nicht eingezeichnet." style="shape=note;size=14;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fillColor=#FFF9C4;strokeColor=#B8A200;fontSize=11;" vertex="1" id="c78" parent="1">
+          <mxGeometry as="geometry" x="1360" y="1100" width="800" height="170" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -8,6 +8,7 @@ Lösungen zu den Aufträgen. Jeder Auftrag liegt in einem eigenen Ordner mit REA
 | D2 | Flug mit Liste von Passagieren | [`D2`](D2) |
 | M2 Serie A | Chain of Responsibility (E-Mail-Handler), Sequenzdiagramme | [`M2_SerieA`](M2_SerieA) |
 | M3 Serie A | Interfaces im UML-Klassendiagramm, Sequenzdiagramm | [`M3_SerieA`](M3_SerieA) |
+| M4 | Eigenes Projekt: Fahrzeugvermietung (Kompetenznachweis) | [`M4_Projekt`](M4_Projekt) |
 | Q3 Serie B | Graphen und Breitensuche (BFS) | [`Q3_SerieB`](Q3_SerieB) |
 | V1 | Vererbung und Spezialklassen (Employees) | [`V1`](V1) |
 | V2 Serie A | Methoden überschreiben – Medien-Verwaltung | [`V2_SerieA`](V2_SerieA) |

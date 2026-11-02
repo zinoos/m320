@@ -1,0 +1,260 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Sequenzdiagramm Fahrzeug vermieten" name="Sequenzdiagramm Fahrzeug vermieten">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell value="&lt;b&gt;Sequenzdiagramm – UC4 &quot;Fahrzeug vermieten&quot;&lt;/b&gt; &amp;nbsp; (Menuepunkt 6)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontSize=16;" vertex="1" id="c3" parent="1">
+          <mxGeometry as="geometry" x="20" y="-20" width="1600" height="30" />
+        </mxCell>
+        <mxCell value="Mitarbeiter" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=62;outlineConnect=0;size=60;" vertex="1" id="c4" parent="1">
+          <mxGeometry as="geometry" x="30.0" y="40" width="40" height="1180" />
+        </mxCell>
+        <mxCell value=":KonsolenUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c5" parent="1">
+          <mxGeometry as="geometry" x="125.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value=":Eingabe" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c6" parent="1">
+          <mxGeometry as="geometry" x="305.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value=":VermietungService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c7" parent="1">
+          <mxGeometry as="geometry" x="505.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value="repos :IRepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c8" parent="1">
+          <mxGeometry as="geometry" x="715.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value="strategie :IPreisStrategie" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c9" parent="1">
+          <mxGeometry as="geometry" x="915.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value="fahrzeug :Fahrzeug" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c10" parent="1">
+          <mxGeometry as="geometry" x="1125.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value="listener :IMietListener" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c11" parent="1">
+          <mxGeometry as="geometry" x="1525.0" y="40" width="170" height="1180" />
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c12" parent="1">
+          <mxGeometry as="geometry" x="205" y="120" width="10" height="1060" />
+        </mxCell>
+        <mxCell value="Menuepunkt 6 waehlen" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c13" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="55" y="135" />
+            <mxPoint as="targetPoint" x="205" y="135" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c14" parent="1">
+          <mxGeometry as="geometry" x="385" y="160" width="10" height="140" />
+        </mxCell>
+        <mxCell value="leseText(&amp;quot;Fahrzeug-ID: &amp;quot;)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c15" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="160" />
+            <mxPoint as="targetPoint" x="385" y="160" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="&amp;quot;F-003&amp;quot;" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c16" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="385" y="185" />
+            <mxPoint as="targetPoint" x="215" y="185" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="leseText(&amp;quot;Kunden-ID: &amp;quot;)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c17" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="215" />
+            <mxPoint as="targetPoint" x="385" y="215" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="&amp;quot;K-001&amp;quot;" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c18" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="385" y="240" />
+            <mxPoint as="targetPoint" x="215" y="240" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="leseDatum(&amp;quot;Von&amp;quot;), leseDatum(&amp;quot;Bis&amp;quot;)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c19" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="270" />
+            <mxPoint as="targetPoint" x="385" y="270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="von, bis : LocalDate" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c20" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="385" y="295" />
+            <mxPoint as="targetPoint" x="215" y="295" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c21" parent="1">
+          <mxGeometry as="geometry" x="585" y="345" width="10" height="765" />
+        </mxCell>
+        <mxCell value="vermieten(fahrzeugId, kundeId, von, bis)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c22" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="345" />
+            <mxPoint as="targetPoint" x="585" y="345" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="Mietvertrag.pruefeZeitraum(von, bis)" style="html=1;align=left;spacingLeft=4;verticalAlign=middle;fontSize=11;endArrow=block;endFill=1;endSize=8;edgeStyle=orthogonalEdgeStyle;rounded=0;labelBackgroundColor=none;" edge="1" id="c23" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="380" />
+            <mxPoint as="targetPoint" x="595" y="404" />
+            <Array as="points">
+              <mxPoint x="635" y="380" />
+              <mxPoint x="635" y="404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c24" parent="1">
+          <mxGeometry as="geometry" x="795" y="430" width="10" height="60" />
+        </mxCell>
+        <mxCell value="findeNachId(fahrzeugId)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c25" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="430" />
+            <mxPoint as="targetPoint" x="795" y="430" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="fahrzeug" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c26" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="795" y="450" />
+            <mxPoint as="targetPoint" x="595" y="450" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="findeNachId(kundeId)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c27" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="470" />
+            <mxPoint as="targetPoint" x="795" y="470" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="kunde" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c28" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="795" y="490" />
+            <mxPoint as="targetPoint" x="595" y="490" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c29" parent="1">
+          <mxGeometry as="geometry" x="995" y="525" width="10" height="75" />
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c30" parent="1">
+          <mxGeometry as="geometry" x="1205" y="545" width="10" height="25" />
+        </mxCell>
+        <mxCell value="berechnePreis(fahrzeug, kunde, von, bis)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c31" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="525" />
+            <mxPoint as="targetPoint" x="995" y="525" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="getTagespreis()  (polymorph)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c32" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1005" y="545" />
+            <mxPoint as="targetPoint" x="1205" y="545" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="tagespreis" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c33" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1205" y="570" />
+            <mxPoint as="targetPoint" x="1005" y="570" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="betrag" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c34" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="995" y="600" />
+            <mxPoint as="targetPoint" x="595" y="600" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=22;fontStyle=1;fillColor=none;strokeColor=#666666;fontSize=11;" vertex="1" id="c35" parent="1">
+          <mxGeometry as="geometry" x="500" y="620" width="840" height="150" />
+        </mxCell>
+        <mxCell value="[fahrzeug.istVerfuegbar()]" style="text;html=1;align=left;fontSize=11;fontStyle=2;" vertex="1" id="c36" parent="1">
+          <mxGeometry as="geometry" x="556" y="620" width="780" height="22" />
+        </mxCell>
+        <mxCell value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" id="c37" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="500" y="695" />
+            <mxPoint as="targetPoint" x="1340" y="695" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="[bereits vermietet]" style="text;html=1;align=left;fontSize=11;fontStyle=2;" vertex="1" id="c38" parent="1">
+          <mxGeometry as="geometry" x="508" y="695" width="824" height="22" />
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c39" parent="1">
+          <mxGeometry as="geometry" x="1205" y="645" width="10" height="30" />
+        </mxCell>
+        <mxCell value="vermieten()" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c40" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="650" />
+            <mxPoint as="targetPoint" x="1205" y="650" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c41" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1205" y="675" />
+            <mxPoint as="targetPoint" x="595" y="675" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="throw FahrzeugNichtVerfuegbarException" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;strokeColor=#B85450;fontColor=#B85450;" edge="1" id="c42" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1205" y="735" />
+            <mxPoint as="targetPoint" x="595" y="735" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="Exception -&amp;gt; zeigeFehler(meldung), Abbruch" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;strokeColor=#B85450;fontColor=#B85450;" edge="1" id="c43" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="585" y="755" />
+            <mxPoint as="targetPoint" x="215" y="755" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="vertrag :Mietvertrag" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" id="c44" parent="1">
+          <mxGeometry as="geometry" x="1335.0" y="775" width="150" height="425" />
+        </mxCell>
+        <mxCell value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Mietvertrag.neu(id, fId, kId, von, bis, betrag)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c45" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="795" />
+            <mxPoint as="targetPoint" x="1335" y="795" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c46" parent="1">
+          <mxGeometry as="geometry" x="1405" y="817" width="10" height="16" />
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c47" parent="1">
+          <mxGeometry as="geometry" x="795" y="840" width="10" height="40" />
+        </mxCell>
+        <mxCell value="speichern(fahrzeug)   -&amp;gt; fahrzeuge.csv" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c48" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="840" />
+            <mxPoint as="targetPoint" x="795" y="840" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="speichern(vertrag)   -&amp;gt; mietvertraege.csv" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c49" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="875" />
+            <mxPoint as="targetPoint" x="795" y="875" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=22;fontStyle=1;fillColor=none;strokeColor=#666666;fontSize=11;" vertex="1" id="c50" parent="1">
+          <mxGeometry as="geometry" x="500" y="900" width="1250" height="120" />
+        </mxCell>
+        <mxCell value="[fuer jeden registrierten Listener]" style="text;html=1;align=left;fontSize=11;fontStyle=2;" vertex="1" id="c51" parent="1">
+          <mxGeometry as="geometry" x="556" y="900" width="1190" height="22" />
+        </mxCell>
+        <mxCell value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c52" parent="1">
+          <mxGeometry as="geometry" x="1605" y="930" width="10" height="70" />
+        </mxCell>
+        <mxCell value="fahrzeugVermietet(vertrag)" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=8;" edge="1" id="c53" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="595" y="935" />
+            <mxPoint as="targetPoint" x="1605" y="935" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="KonsolenUI: &quot;[Info] ... vermietet&quot;&lt;br/&gt;MietProtokoll: Zeile in protokoll.log" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontSize=10;fontColor=#555555;" vertex="1" id="c54" parent="1">
+          <mxGeometry as="geometry" x="1700" y="945" width="240" height="60" />
+        </mxCell>
+        <mxCell value="vertrag" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c55" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="585" y="1050" />
+            <mxPoint as="targetPoint" x="215" y="1050" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell value="Bestaetigung: M-001, 225.00 CHF" style="html=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=none;endArrow=open;endSize=8;dashed=1;" edge="1" id="c56" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="205" y="1080" />
+            <mxPoint as="targetPoint" x="55" y="1080" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
