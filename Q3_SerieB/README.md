@@ -38,7 +38,16 @@ Dieser Graph ist **gerichtet** (`fuegeKanteHinzu`), das Netzwerk oben ungerichte
 | `Netzwerk` | Daten des Graphen speichern und abfragen (Adjazenzliste, Auto-Besitzer) |
 | `Breitensuche` | Suchalgorithmen auf einem Netzwerk (nächster Auto-Besitzer, kürzester Weg) |
 | `Mobilitaet` | Enum `MIT_AUTO` / `OHNE_AUTO` |
-| `Main` | Beispieldaten aufbauen und Ergebnisse auf der Konsole ausgeben |
+| `BeispielNetzwerke` | Beispieldaten aufbauen (Graph vom Auftragsblatt, Freundes-Netzwerk) |
+| `KonsolenAusgabe` | Ergebnisse auf der Konsole ausgeben (einzige Klasse mit `System.out`) |
+| `NetzwerkDemo` | Ablauf der Demo: Daten holen, Suche aufrufen, Ausgabe aufrufen |
+| `Main` | nur Einstiegspunkt: `new NetzwerkDemo(new KonsolenAusgabe()).starten();` |
+
+```
+Main ──> NetzwerkDemo ──> BeispielNetzwerke   (Daten)
+                     ├──> Breitensuche ──> Netzwerk   (Logik)
+                     └──> KonsolenAusgabe   (Ausgabe)
+```
 
 ## Clean Code – wo angewendet
 
@@ -53,23 +62,24 @@ Die Ausgabe des Programms ist vor und nach dem Refactoring identisch.
 | `addPerson`, `addKante` (Englisch/Deutsch gemischt) | `fuegePersonHinzu`, `fuegeKanteHinzu` (einheitlich Deutsch) | `Netzwerk.java:20, 24, 35` |
 | `queue` | `warteschlange` | `Breitensuche.java:32, 72` |
 | `for (String k = ziel; …)` | `for (String person = ziel; …)` | `Breitensuche.java:91` |
-| `Map.Entry e` | Schleife über `person` | `Main.java:88` |
-| `print()` | `zeigeAdjazenzliste(…)` – sagt, *was* gezeigt wird | `Main.java:87` |
-| `addPerson("David", true)` – was heisst `true`? | `fuegePersonHinzu("David", MIT_AUTO)` | `Main.java:77, 79` |
+| `Map.Entry e` | Schleife über `person` | `KonsolenAusgabe.java:26` |
+| `print()` | `zeigeAdjazenzliste(…)` – sagt, *was* gezeigt wird | `KonsolenAusgabe.java:25` |
+| `addPerson("David", true)` – was heisst `true`? | `fuegePersonHinzu("David", MIT_AUTO)` | `BeispielNetzwerke.java:56, 58` |
 
 ### 2. Hard Coding – Konstanten und Enums statt Literale
 
 - **Enum statt boolean-Literal:** `Mobilitaet.MIT_AUTO / OHNE_AUTO` (`Mobilitaet.java:7`), verwendet in
-  `Netzwerk.fuegePersonHinzu` (`Netzwerk.java:24–28`) und `Main.erstelleFreundesNetzwerk` (`Main.java:71–80`).
-- **Konstanten statt mehrfach vorkommender Literale** (`Main.java:15–29`):
-  `START_PERSON` („Ich“ kam vorher 4× vor), `ENTFERNTESTE_PERSON`, `BEISPIEL_START`, `BEISPIEL_ZIEL`,
-  `AUTO_MARKIERUNG`, `KEIN_TREFFER`.
-- **Daten als Tabelle statt 14 kopierter Aufrufe:** `BEISPIEL_KANTEN` und `FREUNDSCHAFTEN` (`Main.java:17, 23`),
-  abgearbeitet in einer Schleife (`Main.java:65, 81`).
+  `Netzwerk.fuegePersonHinzu` (`Netzwerk.java:24–28`) und `BeispielNetzwerke.fuegePersonenHinzu` (`BeispielNetzwerke.java:51–60`).
+- **Konstanten statt mehrfach vorkommender Literale:** `START_PERSON` („Ich“ kam vorher 4× vor),
+  `ENTFERNTESTE_PERSON`, `BEISPIEL_START`, `BEISPIEL_ZIEL` (`BeispielNetzwerke.java:11–14`) sowie
+  `AUTO_MARKIERUNG`, `KEIN_TREFFER` (`KonsolenAusgabe.java:11–12`).
+- **Daten als Tabelle statt 14 kopierter Aufrufe:** `BEISPIEL_KANTEN` und `FREUNDSCHAFTEN` (`BeispielNetzwerke.java:16, 20`),
+  abgearbeitet in einer Schleife (`BeispielNetzwerke.java:33, 45`).
 
 ### 3. Kommentare – JavaDoc für die Spezifikation, Blockkommentar nur bei Komplexem
 
-- **JavaDoc** für jede Klasse (`Netzwerk.java:11`, `Breitensuche.java:13`, `Main.java:9`, `Mobilitaet.java:3`)
+- **JavaDoc** für jede Klasse (`Netzwerk.java:11`, `Breitensuche.java:13`, `BeispielNetzwerke.java:6`, `KonsolenAusgabe.java:6`,
+  `NetzwerkDemo.java:11`, `Main.java:3`, `Mobilitaet.java:3`)
   und für die nicht-trivialen öffentlichen Methoden: `fuegeKanteHinzu` (`Netzwerk.java:31`),
   `fuegeFreundschaftHinzu` (`Netzwerk.java:44`), `sucheNaechstenAutoBesitzer` (`Breitensuche.java:26`),
   `kuerzesterWeg` (`Breitensuche.java:48`). Beschrieben wird *was* passiert und was zurückkommt (Spezifikation),
@@ -85,8 +95,13 @@ Nachher:
 
 - `Netzwerk` (`Netzwerk.java:15`) speichert nur noch Daten.
 - `Breitensuche` (`Breitensuche.java:18`) enthält nur die Algorithmen. Neue Klasse.
-- Die Konsolenausgabe (`print`) ist nach `Main.zeigeAdjazenzliste` (`Main.java:87`) gewandert, weil nur `Main`
-  mit der Konsole arbeitet.
+- **Auslagerungen aus `Main`:** Vorher stand alles in `main` (Daten aufbauen, suchen, ausgeben). Jetzt:
+  - `BeispielNetzwerke` baut die Daten auf (`BeispielNetzwerke.java:31, 42`).
+  - `KonsolenAusgabe` macht die Ausgabe, auch das frühere `print` aus `Netzwerk` (`KonsolenAusgabe.java:25`).
+  - `NetzwerkDemo` steuert nur noch den Ablauf und delegiert (`NetzwerkDemo.java:23`).
+  - `Main` startet nur noch (`Main.java:8–10`).
+  Muss man die Ausgabe ändern (z. B. GUI statt Konsole), ändert sich nur `KonsolenAusgabe`; neue Testdaten
+  betreffen nur `BeispielNetzwerke`.
 - `getNachbarn` / `getPersonen` geben unveränderliche Sichten zurück (`Netzwerk.java:57, 61`), damit niemand
   von aussen die Daten verändert, ohne über `Netzwerk` zu gehen.
 
@@ -96,11 +111,12 @@ Nachher:
   `berechneVorgaenger` (`:69`), `merkeUnbesuchteNachbarn` (`:80`) und `baueWeg` (`:89`). Jede Methode macht genau eins.
 - `sucheNaechstenAutoBesitzer`: verschachteltes `if` durch frühes `continue` ersetzt (`Breitensuche.java:37–39`),
   so bleiben es höchstens zwei Ebenen.
-- `main` (vorher 42 Zeilen) ruft nur noch zwei Methoden auf (`Main.java:31–35`). Aufbau und Ausgabe sind getrennt:
-  `erstelleBeispielGraph`, `erstelleFreundesNetzwerk`, `zeigeBeispielGraph`, `zeigePersonenNetzwerk`, `zeigeAutoSuche`,
-  `zeigeAdjazenzliste`, `autoMarkierung`.
+- `main` hatte vorher 42 Zeilen, jetzt 1 (`Main.java:9`). Die Arbeit steckt in kurzen Methoden mit je einer
+  Aufgabe: `starten`, `zeigeBeispielGraph`, `zeigePersonenNetzwerk`, `zeigeAutoSuche` (`NetzwerkDemo.java`),
+  `erstelleBeispielGraph`, `erstelleFreundesNetzwerk`, `fuegePersonenHinzu` (`BeispielNetzwerke.java`),
+  `zeigeAdjazenzliste`, `zeigeKuerzestenWeg`, `zeigeAutoBesitzer`, `zeigeWegDorthin` (`KonsolenAusgabe.java`).
 - **Kein `null` als Rückgabe:** `sucheNaechstenAutoBesitzer` liefert `Optional<String>` statt `null`
-  (`Breitensuche.java:31`). Der Aufrufer muss den Fall „niemand gefunden“ behandeln (`Main.java:54–58`).
+  (`Breitensuche.java:31`). Der Aufrufer muss den Fall „niemand gefunden“ behandeln (`NetzwerkDemo.java:46–48`, `KonsolenAusgabe.java:36`).
 
 ## Ausgabe (Auszug)
 ```
