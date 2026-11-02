@@ -1,6 +1,6 @@
 # M3 Serie A – Interfaces im UML-Klassendiagramm & Sequenzdiagramm
 
-Grundlage ist der Code aus **V3 Serie B** (`../V3_SerieB_Waffen`).
+Grundlage ist der Code aus **V3 Serie B** (`../V3_SerieB`).
 Die Diagramme liegen als PlantUML (`klassendiagramm.puml`, `sequenzdiagramm.puml`)
 und unten als Mermaid vor (wird direkt auf GitHub gerendert).
 Rendern der PlantUML-Dateien z.B. mit <https://www.plantuml.com/plantuml> oder dem

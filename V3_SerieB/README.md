@@ -16,7 +16,7 @@ Figur führt zu vielen neuen Klassen, und die Waffe kann zur Laufzeit nicht gewe
 → Neue Waffe = **eine** neue Klasse, keine Änderung an den Figuren.
 → Waffe wechselbar zur Laufzeit: `krieger.setWaffe(new DolchVerhalten());`
 
-Klassen- und Sequenzdiagramm dazu: siehe [`../M3_SerieA_UML`](../M3_SerieA_UML).
+Klassen- und Sequenzdiagramm dazu: siehe [`../M3_SerieA`](../M3_SerieA).
 
 ## Ausführen
 ```bash
