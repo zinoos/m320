@@ -1,0 +1,121 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Skizze Klassendiagramm" name="Skizze Klassendiagramm">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell value="&lt;b&gt;Skizze (Planung) – Fahrzeugvermietung&lt;/b&gt; – nur Klassennamen und wichtigste Beziehungen" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontSize=14;" vertex="1" id="c3" parent="1">
+          <mxGeometry as="geometry" x="40" y="0" width="900" height="30" />
+        </mxCell>
+        <mxCell value="ui" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#E1F5FE;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c4" parent="1">
+          <mxGeometry as="geometry" x="20" y="40" width="520" height="170" />
+        </mxCell>
+        <mxCell value="logik" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#E8F5E9;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c5" parent="1">
+          <mxGeometry as="geometry" x="20" y="240" width="1220" height="300" />
+        </mxCell>
+        <mxCell value="model" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#FFF3E0;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c6" parent="1">
+          <mxGeometry as="geometry" x="20" y="570" width="700" height="330" />
+        </mxCell>
+        <mxCell value="daten" style="shape=folder;tabWidth=110;tabHeight=22;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fillColor=#F3E5F5;strokeColor=#999999;opacity=60;fontSize=13;" vertex="1" id="c7" parent="1">
+          <mxGeometry as="geometry" x="745" y="570" width="495" height="330" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KonsolenUI&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c8" parent="1">
+          <mxGeometry as="geometry" x="60" y="90" width="160" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c9" parent="1">
+          <mxGeometry as="geometry" x="300" y="90" width="120" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VermietungService&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c10" parent="1">
+          <mxGeometry as="geometry" x="60" y="290" width="180" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IPreisStrategie&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c11" parent="1">
+          <mxGeometry as="geometry" x="330" y="280" width="170" height="65" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IRepository&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c12" parent="1">
+          <mxGeometry as="geometry" x="780" y="280" width="160" height="65" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IMietListener&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#DAE8FC;strokeColor=#333333;" vertex="1" id="c13" parent="1">
+          <mxGeometry as="geometry" x="1050" y="280" width="160" height="65" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Standardtarif&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c14" parent="1">
+          <mxGeometry as="geometry" x="250" y="450" width="130" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Wochenendtarif&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c15" parent="1">
+          <mxGeometry as="geometry" x="400" y="450" width="130" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;Fahrzeug&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#333333;" vertex="1" id="c16" parent="1">
+          <mxGeometry as="geometry" x="60" y="620" width="140" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Auto&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c17" parent="1">
+          <mxGeometry as="geometry" x="40" y="790" width="90" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Motorrad&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c18" parent="1">
+          <mxGeometry as="geometry" x="145" y="790" width="100" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Lieferwagen&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c19" parent="1">
+          <mxGeometry as="geometry" x="260" y="790" width="110" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FahrzeugFactory&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c20" parent="1">
+          <mxGeometry as="geometry" x="300" y="620" width="150" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Kunde&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c21" parent="1">
+          <mxGeometry as="geometry" x="500" y="620" width="110" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Mietvertrag&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c22" parent="1">
+          <mxGeometry as="geometry" x="500" y="720" width="130" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;CsvRepository&amp;lt;T&amp;gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#333333;" vertex="1" id="c23" parent="1">
+          <mxGeometry as="geometry" x="775" y="620" width="170" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Csv...Repository (3x)&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c24" parent="1">
+          <mxGeometry as="geometry" x="765" y="790" width="190" height="27" />
+        </mxCell>
+        <mxCell value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MietProtokoll&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" vertex="1" id="c25" parent="1">
+          <mxGeometry as="geometry" x="1060" y="620" width="140" height="27" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;" edge="1" source="c9" target="c8" id="c26" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;endSize=10;" edge="1" source="c8" target="c10" id="c27" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="Strategy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;" edge="1" source="c10" target="c11" id="c28" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.2;entryY=1;" edge="1" source="c10" target="c12" id="c29" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;" edge="1" source="c14" target="c11" id="c30" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;" edge="1" source="c15" target="c11" id="c31" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c17" target="c16" id="c32" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c18" target="c16" id="c33" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c19" target="c16" id="c34" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="erzeugt (Factory)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;" edge="1" source="c20" target="c16" id="c35" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=0;entryX=0.7;entryY=1;" edge="1" source="c23" target="c12" id="c36" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;" edge="1" source="c24" target="c23" id="c37" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="Observer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" source="c25" target="c13" id="c38" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell value="Idee: Mitarbeiter einer kleinen Vermietung erfasst Fahrzeuge und Kunden, vermietet Fahrzeuge und nimmt sie zurueck. Preis haengt vom Fahrzeugtyp (Vererbung/Polymorphismus) und vom Tarif (Strategy) ab. Daten in CSV-Dateien." style="shape=note;size=14;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fillColor=#FFF9C4;strokeColor=#B8A200;fontSize=11;" vertex="1" id="c39" parent="1">
+          <mxGeometry as="geometry" x="560" y="90" width="420" height="110" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
