@@ -12,8 +12,12 @@ Lösungen zu den Aufträgen. Jeder Auftrag liegt in einem eigenen Ordner mit REA
 
 Voraussetzung: Java 17+ (getestet mit Java 21). Keine externen Bibliotheken.
 
+Alle Diagramme sind mit draw.io gezeichnet (`*.drawio`, öffnen mit <https://app.diagrams.net>);
+die READMEs zeigen den PNG-Export.
+
+Beispiel:
+
 ```bash
-# Beispiel
 cd V2_SerieC
 javac -d out src/garage/*.java
 java -cp out garage.Main

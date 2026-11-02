@@ -2,7 +2,7 @@ package garage;
 
 public class Lastwagen extends Fahrzeug {
 
-    private double nutzlast;  // in Tonnen
+    private double nutzlast;
     private int anzahlAchsen;
 
     public Lastwagen(String marke, String kundenname, boolean istRepariert,

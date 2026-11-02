@@ -20,45 +20,6 @@
 - `sucheReparierte()` / `printReparierte()` – alle reparierten Fahrzeuge ausgeben.
 - Menu: alle anzeigen, suchen, reparierte anzeigen, als repariert markieren.
 
-```mermaid
-classDiagram
-    class Fahrzeug {
-        <<abstract>>
-        -String marke
-        -String kundenname
-        -boolean istRepariert
-        +print() void
-    }
-    class Auto {
-        -int anzahlTueren
-        -String treibstoff
-        +print() void
-    }
-    class Motorrad {
-        -int hubraum
-        -boolean hatSeitenwagen
-        +print() void
-    }
-    class Lastwagen {
-        -double nutzlast
-        -int anzahlAchsen
-        +print() void
-    }
-    class Garage {
-        -List~Fahrzeug~ fahrzeuge
-        +hinzufuegen(Fahrzeug f) void
-        +print() void
-        +sucheNachKunde(String name) Fahrzeug
-        +sucheReparierte() List~Fahrzeug~
-        +printReparierte() void
-        +reparieren(String name) boolean
-    }
-    Fahrzeug <|-- Auto
-    Fahrzeug <|-- Motorrad
-    Fahrzeug <|-- Lastwagen
-    Garage "1" o-- "0..*" Fahrzeug
-```
-
 ## Ausführen
 ```bash
 javac -d out src/garage/*.java

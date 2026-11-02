@@ -11,11 +11,6 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-/**
- * Netzwerk von Personen als Graph.
- * Key   = Knoten (Person)
- * Value = Liste der Nachbarknoten (Freunde)
- */
 public class Netzwerk {
 
     private final Map<String, List<String>> graph = new LinkedHashMap<>();
@@ -32,7 +27,6 @@ public class Netzwerk {
         }
     }
 
-    /** Gerichtete Kante von -> nach. */
     public void addKante(String von, String nach) {
         addPerson(von);
         addPerson(nach);
@@ -41,7 +35,6 @@ public class Netzwerk {
         }
     }
 
-    /** Freundschaft = Kante in beide Richtungen. */
     public void addFreundschaft(String a, String b) {
         addKante(a, b);
         addKante(b, a);
@@ -55,11 +48,6 @@ public class Netzwerk {
         return autoBesitzer.contains(name);
     }
 
-    /**
-     * Breitensuche (BFS): findet die naechste Person (wenigsten
-     * "Spruenge" vom Start), die ein Auto hat.
-     * @return Name der Person oder null, wenn niemand ein Auto hat
-     */
     public String sucheNaechstenAutoBesitzer(String start) {
         Queue<String> queue = new ArrayDeque<>(getNachbarn(start));
         Set<String> geprueft = new HashSet<>();
@@ -68,21 +56,17 @@ public class Netzwerk {
         while (!queue.isEmpty()) {
             String person = queue.poll();
             if (geprueft.contains(person)) {
-                continue; // Person wurde schon geprueft -> Endlosschleife vermeiden
+                continue;
             }
             geprueft.add(person);
             if (hatAuto(person)) {
                 return person;
             }
-            queue.addAll(getNachbarn(person)); // Nachbarn hinten anstellen
+            queue.addAll(getNachbarn(person));
         }
         return null;
     }
 
-    /**
-     * Kuerzester Weg (Anzahl Kanten) von start nach ziel mittels BFS.
-     * @return Liste der Knoten auf dem Weg, leer wenn kein Weg existiert
-     */
     public List<String> kuerzesterWeg(String start, String ziel) {
         if (!graph.containsKey(start) || !graph.containsKey(ziel)) {
             return Collections.emptyList();

@@ -1,11 +1,5 @@
 package figuren;
 
-/**
- * Superklasse aller Figuren.
- * Das Waffen-Verhalten ist nicht mehr per Vererbung fest eingebaut,
- * sondern als Aggregation (HAT-Beziehung) ueber das Interface ausgelagert.
- * Dadurch kann die Waffe zur Laufzeit gewechselt werden.
- */
 public abstract class Figur {
 
     private String characterName;
@@ -36,7 +30,6 @@ public abstract class Figur {
         System.out.println(characterName + " laeuft.");
     }
 
-    /** Kaempfen delegiert an das aktuelle Waffen-Verhalten. */
     public void kaempfen() {
         if (waffe == null) {
             System.out.println("  -> kaempft mit blossen Faeusten.");

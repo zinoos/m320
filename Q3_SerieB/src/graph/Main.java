@@ -3,7 +3,6 @@ package graph;
 public class Main {
 
     public static void main(String[] args) {
-        // 1) Beispiel-Graph vom Auftragsblatt (gerichtet, Knoten 1-6)
         Netzwerk beispiel = new Netzwerk();
         beispiel.addKante("1", "2");
         beispiel.addKante("1", "3");
@@ -11,14 +10,12 @@ public class Main {
         beispiel.addKante("3", "4");
         beispiel.addKante("4", "5");
         beispiel.addKante("5", "6");
-        beispiel.addPerson("6");
 
         System.out.println("=== Beispiel-Graph (Adjazenzliste) ===");
         beispiel.print();
         System.out.println("Kuerzester Weg 1 -> 6: " + beispiel.kuerzesterWeg("1", "6"));
         System.out.println();
 
-        // 2) Eigenes Netzwerk von Personen (Freundschaften = ungerichtet)
         Netzwerk freunde = new Netzwerk();
         freunde.addPerson("Ich", false);
         freunde.addPerson("Anna", false);

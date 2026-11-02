@@ -3,7 +3,7 @@ package garage;
 public class Auto extends Fahrzeug {
 
     private int anzahlTueren;
-    private String treibstoff; // z.B. Benzin, Diesel, Elektro
+    private String treibstoff;
 
     public Auto(String marke, String kundenname, boolean istRepariert,
                 int anzahlTueren, String treibstoff) {
@@ -14,7 +14,7 @@ public class Auto extends Fahrzeug {
 
     @Override
     public void print() {
-        super.print(); // Attribute der Superklasse
+        super.print();
         System.out.println("Anzahl Tueren: " + anzahlTueren);
         System.out.println("Treibstoff:   " + treibstoff);
     }

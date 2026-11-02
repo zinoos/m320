@@ -1,0 +1,106 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Personen-Netzwerk" name="Personen-Netzwerk">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="600" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="Start" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="45" y="30" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="1. Grad" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="215" y="30" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="2. Grad" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="385" y="30" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="3. Grad" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="555" y="30" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="4. Grad" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="725" y="30" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Ich" value="Ich" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#6c8ebf;strokeColor=#3f5f8f;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="60" y="185" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Anna" value="Anna" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="95" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ben" value="Ben" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="275" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Clara" value="Clara" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="95" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Eva" value="Eva" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="275" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="David" value="David&lt;br&gt;🚗" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="95" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Felix" value="Felix&lt;br&gt;🚗" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="275" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gina" value="Gina" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="275" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="Ich" target="Anna">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1" source="Ich" target="Ben">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="Anna" target="Clara">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1" source="Ben" target="Clara">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1" source="Ben" target="Eva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="Clara" target="David">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1" source="Eva" target="Felix">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1" source="Felix" target="Gina">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="880" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#6c8ebf;strokeColor=#3f5f8f;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="75" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="Start (Ich)" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="420" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_auto" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="210" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="hat ein Auto" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="420" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="435" as="sourcePoint" />
+            <mxPoint x="400" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" value="Freundschaft (ungerichtet)" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="408" y="420" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="435" as="sourcePoint" />
+            <mxPoint x="620" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c20" value="BFS-Ergebnis: Ich → Anna → Clara → David" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="628" y="420" width="300" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

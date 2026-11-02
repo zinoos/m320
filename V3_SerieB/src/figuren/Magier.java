@@ -9,6 +9,6 @@ public class Magier extends Figur {
     @Override
     public void kaempfen() {
         System.out.println("Magier " + getCharacterName() + " murmelt eine Beschwoerung");
-        super.kaempfen(); // eigentliches Kaempfen via Waffen-Verhalten
+        super.kaempfen();
     }
 }

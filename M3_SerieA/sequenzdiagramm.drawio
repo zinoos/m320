@@ -1,0 +1,185 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Sequenzdiagramm-Waffenwechsel" name="Sequenzdiagramm Waffenwechsel">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="1000" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="Spieler" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=42;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="40" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value=":Main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="160" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="235" y="120" width="10" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="main(args)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="120" as="sourcePoint" />
+            <mxPoint x="235" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c5" value="axt:AxtVerhalten" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="690" y="150" width="160" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="«create»&lt;br&gt;new AxtVerhalten()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="170" as="sourcePoint" />
+            <mxPoint x="690" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c7" value="krieger:Krieger" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="210" width="160" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="«create»&lt;br&gt;new Krieger(&quot;Conan&quot;, axt)" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="230" as="sourcePoint" />
+            <mxPoint x="450" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="525" y="280" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="kaempfen()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="280" as="sourcePoint" />
+            <mxPoint x="525" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="533" y="320" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="getCharacterName()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="296" as="sourcePoint" />
+            <mxPoint x="543" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="296" />
+              <mxPoint x="575" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="533" y="370" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="super.kaempfen()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="346" as="sourcePoint" />
+            <mxPoint x="543" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="346" />
+              <mxPoint x="575" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="765" y="390" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="verwendeWaffe()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="541" y="390" as="sourcePoint" />
+            <mxPoint x="765" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="420" as="sourcePoint" />
+            <mxPoint x="541" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="470" as="sourcePoint" />
+            <mxPoint x="245" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="dolch:DolchVerhalten" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="910" y="500" width="160" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="«create»&lt;br&gt;new DolchVerhalten()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="520" as="sourcePoint" />
+            <mxPoint x="910" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="525" y="580" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="setWaffe(dolch)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="580" as="sourcePoint" />
+            <mxPoint x="525" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="610" as="sourcePoint" />
+            <mxPoint x="245" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="525" y="650" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" value="kaempfen()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="650" as="sourcePoint" />
+            <mxPoint x="525" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="533" y="690" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" value="getCharacterName()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="666" as="sourcePoint" />
+            <mxPoint x="543" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="666" />
+              <mxPoint x="575" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="533" y="740" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" value="super.kaempfen()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="716" as="sourcePoint" />
+            <mxPoint x="543" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="716" />
+              <mxPoint x="575" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="985" y="760" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" value="verwendeWaffe()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="541" y="760" as="sourcePoint" />
+            <mxPoint x="985" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e32" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="790" as="sourcePoint" />
+            <mxPoint x="541" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e33" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="840" as="sourcePoint" />
+            <mxPoint x="245" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e34" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="860" as="sourcePoint" />
+            <mxPoint x="60" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

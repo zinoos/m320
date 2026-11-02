@@ -3,7 +3,6 @@ package medien;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Verwaltet die Liste der Medien: hinzufuegen, loeschen, ausgeben, suchen. */
 public class MedienVerwaltung {
 
     private final List<Medium> medien = new ArrayList<>();
@@ -12,11 +11,6 @@ public class MedienVerwaltung {
         medien.add(medium);
     }
 
-    /**
-     * Loescht ein Medium anhand des Titels.
-     * Ausgeliehene Medien duerfen nicht geloescht werden.
-     * @return true, wenn das Medium geloescht wurde
-     */
     public boolean loeschen(String titel) {
         Medium m = suche(titel);
         if (m == null || m.isIstAusgeliehen()) {
@@ -25,12 +19,10 @@ public class MedienVerwaltung {
         return medien.remove(m);
     }
 
-    /** Gibt jedes Medium via seine eigene print-Methode aus. */
     public void print() {
         printListe(medien);
     }
 
-    /** Sucht ein bestimmtes Medium anhand des Titels. */
     public Medium suche(String titel) {
         for (Medium m : medien) {
             if (m.getTitel().equalsIgnoreCase(titel)) {
@@ -49,7 +41,6 @@ public class MedienVerwaltung {
         }
     }
 
-    /** Liefert alle ausgeliehenen Medien. */
     public List<Medium> sucheAusgeliehene() {
         List<Medium> resultat = new ArrayList<>();
         for (Medium m : medien) {
@@ -89,7 +80,7 @@ public class MedienVerwaltung {
         }
         for (Medium m : liste) {
             System.out.println("----------------------------");
-            m.print(); // dynamisches Binden: print() der Subklasse
+            m.print();
         }
         System.out.println("----------------------------");
     }

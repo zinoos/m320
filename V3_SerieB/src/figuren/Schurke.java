@@ -9,6 +9,6 @@ public class Schurke extends Figur {
     @Override
     public void kaempfen() {
         System.out.println("Schurke " + getCharacterName() + " schleicht sich von hinten an");
-        super.kaempfen(); // eigentliches Kaempfen via Waffen-Verhalten
+        super.kaempfen();
     }
 }

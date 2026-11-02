@@ -9,6 +9,6 @@ public class Krieger extends Figur {
     @Override
     public void kaempfen() {
         System.out.println("Krieger " + getCharacterName() + " stuermt bruellend nach vorne");
-        super.kaempfen(); // eigentliches Kaempfen via Waffen-Verhalten
+        super.kaempfen();
     }
 }

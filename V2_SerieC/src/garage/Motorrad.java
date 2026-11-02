@@ -2,7 +2,7 @@ package garage;
 
 public class Motorrad extends Fahrzeug {
 
-    private int hubraum;          // in ccm
+    private int hubraum;
     private boolean hatSeitenwagen;
 
     public Motorrad(String marke, String kundenname, boolean istRepariert,

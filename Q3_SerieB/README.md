@@ -6,19 +6,11 @@ Ein Graph wird als `HashMap<String, List<String>>` abgebildet:
 Der Wert ist also nicht ein Element, sondern wiederum eine **Liste**.
 
 ## Personen-Netzwerk (visuell)
-Freundschaften sind gegenseitig (ungerichtet). `[Auto]` = Person besitzt ein Auto.
+Freundschaften sind gegenseitig (ungerichtet). Orange = Person besitzt ein Auto.
 
-```mermaid
-graph LR
-    Ich --- Anna
-    Ich --- Ben
-    Anna --- Clara
-    Ben --- Clara
-    Ben --- Eva
-    Clara --- David["David 🚗"]
-    Eva --- Felix["Felix 🚗"]
-    Felix --- Gina
-```
+[![Personen-Netzwerk](netzwerk.png)](netzwerk.drawio)
+
+Die grünen Kanten zeigen das Ergebnis der Breitensuche ab „Ich“.
 
 ## Breitensuche (Breadth-First-Search)
 Frage: *Wer ist die nächste Person in meinem Netzwerk, die ein Auto hat?*
@@ -37,9 +29,11 @@ Die `geprueft`-Menge verhindert Endlosschleifen bei Zyklen.
 und liefert so den ganzen Weg.
 
 `Main` bildet ausserdem den Beispiel-Graphen (Knoten 1–6) vom Auftragsblatt ab.
+Dieser Graph ist **gerichtet** (`addKante`), das Netzwerk oben ungerichtet (`addFreundschaft`).
 
 ## Ausgabe (Auszug)
 ```
+Kuerzester Weg 1 -> 6: [1, 2, 4, 5, 6]
 Naechste Person mit Auto (BFS ab 'Ich'): David
 Weg dorthin: [Ich, Anna, Clara, David]
 Kuerzester Weg Ich -> Gina: [Ich, Ben, Eva, Felix, Gina]

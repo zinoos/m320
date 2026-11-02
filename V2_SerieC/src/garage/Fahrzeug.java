@@ -1,9 +1,5 @@
 package garage;
 
-/**
- * Superklasse aller Fahrzeuge in der Garage.
- * Enthaelt die gemeinsamen Attribute Marke, Kundenname und istRepariert.
- */
 public abstract class Fahrzeug {
 
     private String marke;
@@ -16,11 +12,6 @@ public abstract class Fahrzeug {
         this.istRepariert = istRepariert;
     }
 
-    /**
-     * Gibt die Attribute der Superklasse aus.
-     * Die Subklassen ueberschreiben diese Methode und geben zusaetzlich
-     * ihre eigenen Attribute aus (Polymorphismus).
-     */
     public void print() {
         System.out.println("Typ:          " + getClass().getSimpleName());
         System.out.println("Marke:        " + marke);

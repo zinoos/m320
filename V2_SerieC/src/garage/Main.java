@@ -2,8 +2,9 @@ package garage;
 
 import java.util.Scanner;
 
-/** Einfaches User-Menu fuer die Garagen-App. */
 public class Main {
+
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         Garage garage = new Garage();
@@ -13,7 +14,6 @@ public class Main {
         garage.hinzufuegen(new Motorrad("BMW", "Frei", false, 800, true));
         garage.hinzufuegen(new Lastwagen("Scania", "Transport AG", false, 18.5, 3));
 
-        Scanner scanner = new Scanner(System.in);
         boolean weiter = true;
 
         while (weiter) {
@@ -33,14 +33,10 @@ public class Main {
 
             switch (auswahl) {
                 case "1" -> garage.print();
-                case "2" -> {
-                    System.out.print("Kundenname: ");
-                    garage.sucheUndPrint(scanner.nextLine().trim());
-                }
+                case "2" -> garage.sucheUndPrint(eingabe("Kundenname: "));
                 case "3" -> garage.printReparierte();
                 case "4" -> {
-                    System.out.print("Kundenname: ");
-                    String name = scanner.nextLine().trim();
+                    String name = eingabe("Kundenname: ");
                     if (garage.reparieren(name)) {
                         System.out.println("Fahrzeug von " + name + " ist jetzt repariert.");
                     } else {
@@ -52,5 +48,10 @@ public class Main {
             }
         }
         System.out.println("Auf Wiedersehen!");
+    }
+
+    private static String eingabe(String text) {
+        System.out.print(text);
+        return scanner.hasNextLine() ? scanner.nextLine().trim() : "";
     }
 }

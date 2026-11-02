@@ -2,7 +2,6 @@ package medien;
 
 import java.util.Scanner;
 
-/** User-Menu fuer die Medien-Verwaltung. */
 public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);

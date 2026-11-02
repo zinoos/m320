@@ -1,6 +1,5 @@
 package medien;
 
-/** Superklasse aller Medien. */
 public abstract class Medium {
 
     private String titel;
@@ -13,7 +12,6 @@ public abstract class Medium {
         this.istAusgeliehen = false;
     }
 
-    /** Wird von jeder Subklasse ueberschrieben (Polymorphismus). */
     public void print() {
         System.out.println("Typ:          " + getClass().getSimpleName());
         System.out.println("Titel:        " + titel);
