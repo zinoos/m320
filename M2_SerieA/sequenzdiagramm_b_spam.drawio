@@ -1,0 +1,166 @@
+<mxfile host="drawio" type="device">
+  <diagram id="Use-Case-b)-Spam" name="Use Case b) Spam">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="940" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="105" y="90" width="10" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value=":Main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="200" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="spam:SpamHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="200" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="verkauf:SalesHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="470" y="170" width="200" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="allgemein:GeneralInboxHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="230" width="200" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="«create»&lt;br&gt;new SpamHandler()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="130" as="sourcePoint" />
+            <mxPoint x="240" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="«create»&lt;br&gt;new SalesHandler()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="190" as="sourcePoint" />
+            <mxPoint x="470" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="«create»&lt;br&gt;new GeneralInboxHandler()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="250" as="sourcePoint" />
+            <mxPoint x="700" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="335" y="310" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="setNext(verkauf)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="310" as="sourcePoint" />
+            <mxPoint x="335" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="verkauf" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335" y="340" as="sourcePoint" />
+            <mxPoint x="115" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="565" y="380" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="setNext(allgemein)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="380" as="sourcePoint" />
+            <mxPoint x="565" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="allgemein" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="410" as="sourcePoint" />
+            <mxPoint x="115" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="email:Email" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=40;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="940" y="450" width="200" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="«create»&lt;br&gt;new Email(&quot;werbung@example.ch&quot;,&lt;br&gt;&quot;Gratis Gewinn!&quot;, …)" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="470" as="sourcePoint" />
+            <mxPoint x="940" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="335" y="540" width="10" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="handle(email)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="540" as="sourcePoint" />
+            <mxPoint x="335" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="343" y="564" width="10" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="canHandle(email)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="540" as="sourcePoint" />
+            <mxPoint x="353" y="564" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="385" y="540" />
+              <mxPoint x="385" y="564" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="590" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="getSubject()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="353" y="590" as="sourcePoint" />
+            <mxPoint x="1035" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="610" as="sourcePoint" />
+            <mxPoint x="353" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="630" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" value="getBody()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="353" y="630" as="sourcePoint" />
+            <mxPoint x="1035" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e26" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="650" as="sourcePoint" />
+            <mxPoint x="353" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e27" value="true" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="353" y="670" as="sourcePoint" />
+            <mxPoint x="345" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="393" y="670" />
+              <mxPoint x="393" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;fillColor=default;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="343" y="734" width="10" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" value="process(email)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;align=left;spacingLeft=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="710" as="sourcePoint" />
+            <mxPoint x="353" y="734" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="385" y="710" />
+              <mxPoint x="385" y="734" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" value="in den Spam-Ordner verschoben.&lt;br&gt;Die Kette bricht ab: verkauf und&lt;br&gt;allgemein sehen die E-Mail nicht." style="shape=note;whiteSpace=wrap;html=1;size=14;fontSize=12;align=left;spacingLeft=6;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="510" y="700" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" value="" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=8;rounded=0;fontSize=12;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335" y="810" as="sourcePoint" />
+            <mxPoint x="115" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
