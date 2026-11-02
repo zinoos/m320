@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Heizung Klassendiagramm" id="heizungKlassendiagramm">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Titel -->
+        <mxCell id="title" value="UML Klassendiagramm: Haus / Raum / Heizung" style="text;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Klasse Haus -->
+        <mxCell id="haus" value="Haus" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;swimlaneFillColor=#ffffff;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="450" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="haus_attr" value="- adresse: String&#10;- raeume: List&lt;Raum&gt;" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="haus">
+          <mxGeometry y="32" width="450" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="haus_sep" value="" style="line;strokeWidth=1;strokeColor=#6c8ebf;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;" vertex="1" parent="haus">
+          <mxGeometry y="76" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="haus_meth" value="+ Haus(adresse: String)&#10;+ createRaum(name, temperature, increment): Raum&#10;+ createRaum(name, temperature, increment, min, max): Raum&#10;+ removeRaum(raum: Raum): void&#10;+ getRaeume(): List&lt;Raum&gt;&#10;+ getAnzahlRaeume(): int" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="haus">
+          <mxGeometry y="84" width="450" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Klasse Raum -->
+        <mxCell id="raum" value="Raum" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;swimlaneFillColor=#ffffff;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="140" width="390" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="raum_attr" value="- name: String&#10;- haus: Haus&#10;- heizung: Heizung" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="raum">
+          <mxGeometry y="32" width="390" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="raum_sep" value="" style="line;strokeWidth=1;strokeColor=#82b366;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;" vertex="1" parent="raum">
+          <mxGeometry y="90" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="raum_meth" value="~ Raum(haus, name, temperature, increment)&#10;~ Raum(haus, name, temperature, increment, min, max)&#10;+ getName(): String&#10;+ getHaus(): Haus&#10;+ getHeizung(): Heizung" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="raum">
+          <mxGeometry y="98" width="390" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- Klasse Heizung -->
+        <mxCell id="heizung" value="Heizung" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;swimlaneFillColor=#ffffff;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="120" width="330" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="heizung_attr" value="- temperature: int&#10;- min: int&#10;- max: int&#10;- increment: int" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="heizung">
+          <mxGeometry y="32" width="330" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="heizung_sep" value="" style="line;strokeWidth=1;strokeColor=#d79b00;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;" vertex="1" parent="heizung">
+          <mxGeometry y="104" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="heizung_meth" value="+ Heizung(temperature, increment)&#10;+ Heizung(temperature, increment, min, max)&#10;+ warmer(): void&#10;+ colder(): void&#10;+ getTemperature(): int&#10;+ setTemperature(int): void&#10;+ getMin/getMax/getIncrement(): int" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontFamily=Courier New;" vertex="1" parent="heizung">
+          <mxGeometry y="112" width="330" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- Komposition Haus -> Raum -->
+        <mxCell id="edge1" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=none;startArrow=diamondThin;endFill=0;startSize=18;elbow=vertical;startFill=1;rounded=0;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="haus" target="raum">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1_src_label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" vertex="1" connectable="0" parent="edge1">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" y="-12" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1_tgt_label" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" vertex="1" connectable="0" parent="edge1">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" y="-12" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1_label" value="besitzt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" connectable="0" parent="edge1">
+          <mxGeometry x="0" relative="1" as="geometry">
+            <mxPoint as="offset" y="14" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Komposition Raum -> Heizung -->
+        <mxCell id="edge2" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=none;startArrow=diamondThin;endFill=0;startSize=18;elbow=vertical;startFill=1;rounded=0;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="raum" target="heizung">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2_src_label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" vertex="1" connectable="0" parent="edge2">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" y="-12" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2_tgt_label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" vertex="1" connectable="0" parent="edge2">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" y="-12" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2_label" value="besitzt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" connectable="0" parent="edge2">
+          <mxGeometry x="0" relative="1" as="geometry">
+            <mxPoint as="offset" y="14" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Legende Box -->
+        <mxCell id="legende_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#cccccc;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="640" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="legende_title" value="Legende" style="text;align=left;verticalAlign=top;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="75" y="428" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legende" value="◆──  Komposition: das &quot;Teil&quot; kann nicht ohne das &quot;Ganze&quot; existieren&#10;         (kein Raum ohne Haus, keine Heizung ohne Raum)&#10;&#10;1 Haus hat 1..* Räume  |  1 Raum hat genau 1 Heizung&#10;&#10;-  vor Attribut = private     +  vor Methode = public" style="text;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;fontColor=#444444;" vertex="1" parent="1">
+          <mxGeometry x="75" y="450" width="610" height="75" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

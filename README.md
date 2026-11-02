@@ -5,6 +5,7 @@ Lösungen zu den Aufträgen. Jeder Auftrag liegt in einem eigenen Ordner mit REA
 | Auftrag | Thema | Ordner |
 |---|---|---|
 | D1 | Klasse Heizung, überladene Konstruktoren | [`D1`](D1) |
+| D1 Erweiterung | Komposition Haus / Raum / Heizung (draw.io) | [`D1_Komposition`](D1_Komposition) |
 | D2 | Flug mit Liste von Passagieren | [`D2`](D2) |
 | M2 Serie A | Chain of Responsibility (E-Mail-Handler), Sequenzdiagramme | [`M2_SerieA`](M2_SerieA) |
 | M3 Serie A | Interfaces im UML-Klassendiagramm, Sequenzdiagramm | [`M3_SerieA`](M3_SerieA) |
@@ -12,6 +13,7 @@ Lösungen zu den Aufträgen. Jeder Auftrag liegt in einem eigenen Ordner mit REA
 | Q3 Serie B | Graphen und Breitensuche (BFS) | [`Q3_SerieB`](Q3_SerieB) |
 | V1 | Vererbung und Spezialklassen (Employees) | [`V1`](V1) |
 | V2 Serie A | Methoden überschreiben – Medien-Verwaltung | [`V2_SerieA`](V2_SerieA) |
+| V2 Serie C | Garagen-App, Vererbung und Polymorphismus | [`V2_SerieC`](V2_SerieC) |
 | V3 Serie B | Dynamisches Verhalten in Interface auslagern | [`V3_SerieB`](V3_SerieB) |
 
 Voraussetzung: Java 17+ (getestet mit Java 21). Keine externen Bibliotheken.
